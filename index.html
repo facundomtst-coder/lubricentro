@@ -15,12 +15,36 @@
   <li><strong>Escaneá la patente</strong> con la cámara (Mercosur y modelo 1995) y abrí la ficha del vehículo.</li>
   <li><strong>Registrá cada service</strong>: kilometraje, aceite, filtros, costo y foto del tablero. El próximo service se calcula solo.</li>
   <li><strong>Avisos de vencimiento</strong> por kilometraje o por fecha, con recordatorio por WhatsApp al cliente.</li>
-  <li><strong>Backup en tu Google Drive</strong> y trabajo en equipo entre los celulares del taller.</li>
+  <li><strong>Backup en tu Google Drive o en la tarjeta SD</strong> y trabajo en equipo entre los celulares del taller.</li>
 </ul>
 
-<p>Lubricentro es una app para Android de uso interno del taller. Los datos quedan en el celular y en la cuenta de Google del propio taller.</p>
+<p>Lubricentro es una app para Android de uso interno del taller. Los datos quedan en el celular y en la cuenta de Google o la tarjeta SD del propio taller.</p>
+
+<section class="descarga" id="descargar">
+  <h2>Descargar la app</h2>
+  <p><a class="boton" href="Lubricentro.apk">Descargar Lubricentro para Android</a></p>
+  <p class="nota">O escaneá este código con la cámara del celular:</p>
+  <div id="qr" aria-label="Código QR para descargar la app"></div>
+  <h3>Cómo instalarla</h3>
+  <ol>
+    <li>Tocá el botón (o el código) desde el celular y esperá que termine la descarga.</li>
+    <li>Abrí el archivo <code>Lubricentro.apk</code> desde la notificación o desde Descargas.</li>
+    <li>Si Android avisa que no permite instalar apps de este origen, tocá <strong>Configuración</strong>, activá <strong>Permitir de esta fuente</strong> y volvé.</li>
+    <li>Tocá <strong>Instalar</strong>. Para actualizar, se hace lo mismo: los datos se conservan.</li>
+  </ol>
+</section>
 
 <p><a href="privacidad.html">Política de privacidad</a> · <a href="mailto:facundomt.st@gmail.com">Contacto</a></p>
 </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  // El QR se arma en el navegador con el mismo link del botón: si cambia el link, cambia el QR.
+  if (window.QRCode) {
+    new QRCode(document.getElementById("qr"), {
+      text: "https://facundomtst-coder.github.io/lubricentro/#descargar",
+      width: 200, height: 200, colorDark: "#1b2433", colorLight: "#ffffff",
+    });
+  }
+</script>
 </body>
 </html>

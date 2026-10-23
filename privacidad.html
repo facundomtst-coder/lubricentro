@@ -10,13 +10,13 @@
 <main>
 <p><a href="index.html">← Lubricentro</a></p>
 <h1>Política de privacidad</h1>
-<p class="fecha">Vigente desde el 5 de octubre de 2026</p>
+<p class="fecha">Vigente desde el 23 de octubre de 2026</p>
 
 <p>Lubricentro es una app para Android que usan los talleres de cambio de aceite para registrar vehículos, clientes y services. Esta política explica qué datos maneja la app, dónde se guardan y con quién se comparten.</p>
 
 <h2>Resumen</h2>
 <ul>
-  <li>Los datos que carga el taller quedan <strong>en el celular</strong> y, si el taller lo activa, en <strong>su propia cuenta de Google Drive</strong>.</li>
+  <li>Los datos que carga el taller quedan <strong>en el celular</strong> y, si el taller lo activa, en <strong>su propia cuenta de Google Drive</strong> o en <strong>la tarjeta SD del celular</strong>.</li>
   <li>El desarrollador de la app <strong>no recibe, no ve y no guarda</strong> ninguno de esos datos.</li>
   <li>La app no muestra publicidad, no vende datos y no usa servicios de analítica.</li>
 </ul>
@@ -34,13 +34,16 @@
 <ul>
   <li><strong>Cámara:</strong> para leer la patente y sacar fotos del tablero. La lectura de la patente se hace <strong>dentro del celular</strong>: la imagen no se envía a ningún servidor.</li>
   <li><strong>Notificaciones:</strong> para el aviso diario de vehículos con service próximo o vencido.</li>
-  <li><strong>Internet:</strong> solo para el backup en Google Drive y la sincronización entre celulares, si se activan.</li>
+  <li><strong>Internet:</strong> solo para el backup en Google Drive y la sincronización entre celulares, si se activan. El backup en la tarjeta SD no usa internet.</li>
 </ul>
 
 <h2>Google Drive (opcional)</h2>
 <p>Si el taller conecta su cuenta de Google, la app guarda copias de seguridad de los datos y, si se elige, las fotos, en la <strong>carpeta privada de la app dentro de ese Google Drive</strong> (permiso <code>drive.appdata</code>). Esa carpeta solo la puede leer Lubricentro: la app <strong>no tiene acceso a ningún otro archivo</strong> de Drive, y esas copias tampoco aparecen entre los archivos del usuario.</p>
 <p>Las copias se usan únicamente para restaurar los datos en el mismo celular o en otro del mismo taller. El uso de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de las API de Google</a>, incluidos los requisitos de uso limitado.</p>
 <p>El acceso se puede quitar en cualquier momento desde <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</p>
+
+<h2>Tarjeta SD (opcional)</h2>
+<p>En lugar de Google Drive, el taller puede guardar las copias de seguridad y las fotos en una carpeta que elige en la tarjeta de memoria del celular. La app solo accede a esa carpeta, con el permiso que el usuario le da al elegirla, y puede quitárselo en cualquier momento desde la app ("Dejar de hacer backup"). Quien tenga la tarjeta puede leer esos archivos: conviene guardarla en un lugar seguro.</p>
 
 <h2>Sincronización entre celulares (opcional)</h2>
 <p>Si el taller activa el trabajo en equipo, los datos del taller se sincronizan entre sus celulares mediante Google Firebase, asociados a las cuentas de Google de los miembros del taller. Solo los miembros de ese taller pueden leerlos.</p>
@@ -52,7 +55,7 @@
 <p>La app usa bibliotecas de Google (ML Kit para leer patentes, servicios de Google Play para iniciar sesión). Estas bibliotecas pueden enviar a Google información técnica anónima sobre su funcionamiento, según la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>. No incluye los datos de clientes ni de vehículos.</p>
 
 <h2>Cuánto tiempo se guardan los datos</h2>
-<p>Los datos quedan en el celular hasta que el taller los borra desde la app (papelera) o desinstala la app. En Google Drive se conservan las últimas 10 copias de seguridad; las anteriores se borran solas.</p>
+<p>Los datos quedan en el celular hasta que el taller los borra desde la app (papelera) o desinstala la app. En Google Drive o en la tarjeta SD se conservan las últimas 10 copias de seguridad; las anteriores se borran solas.</p>
 
 <h2>Derechos de los clientes del taller</h2>
 <p>Quien quiera consultar, corregir o eliminar sus datos debe pedírselo al taller que los cargó, que puede hacerlo directamente desde la app.</p>
